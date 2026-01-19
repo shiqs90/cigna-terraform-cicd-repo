@@ -1,5 +1,6 @@
 # Payment API Infrastructure
 # Placeholder for payment-specific resources
+# Updated to test workflow with AWS secrets configured
 
 terraform {
   required_version = ">= 1.0.0"
