@@ -1,10 +1,18 @@
 # Payment API Infrastructure
-# This would contain payment-specific resources
+# Placeholder for payment-specific resources
 
-resource "null_resource" "payment_api_placeholder" {
-  triggers = {
-    timestamp = timestamp()
+terraform {
+  required_version = ">= 1.0.0"
+
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 5.0"
+    }
   }
 }
 
-# Added change to test CI/CD conditional execution
+# This is a placeholder - in real scenario would contain payment API resources
+output "payment_api_status" {
+  value = "Payment API infrastructure configured"
+}
