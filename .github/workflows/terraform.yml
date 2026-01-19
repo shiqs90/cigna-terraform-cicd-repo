@@ -13,7 +13,7 @@ jobs:
       payment_api_changed: ${{ steps.filter.outputs.payment_api }}
       iam_changed: ${{ steps.filter.outputs.iam }}
       terraform_files_changed: ${{ steps.filter.outputs.terraform }}
-      only_changelog: ${{ steps.filter.outputs.only_changelog }}
+      only_changelog: ${{ steps.changelog_only.outputs.only_changelog }}
     steps:
       - uses: actions/checkout@v4
         with:
