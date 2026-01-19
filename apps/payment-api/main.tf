@@ -6,3 +6,5 @@ resource "null_resource" "payment_api_placeholder" {
     timestamp = timestamp()
   }
 }
+
+# Added change to test CI/CD conditional execution
